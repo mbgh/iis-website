@@ -1,0 +1,37 @@
+@INPROCEEDINGS{Gautschi14,
+  author       = "Gautschi, M. and Muehlberghuber, M. and Traber, A. and Stucki, S. and Baer, M. and Andri, R. and Benini, L. and Muheim, B. and Kaeslin, H.",
+  title        = "{\textsc{SIR10US}: A Tightly Coupled Elliptic-Curve Cryptography Co-Processor for the OpenRISC}",
+  booktitle    = "{25th IEEE International Conference on Application-specific Systems, Architectures and Processors (ASAP'14)}",
+  pages        = "25--29",
+  year         = "2014",
+  month        = "June",
+  doi          = "10.1109/ASAP.2014.6868626",
+  note         = "\url{http://dx.doi.org/10.1109/ASAP.2014.6868626}",
+  keywords     = "coprocessors;embedded systems;public key cryptography;reduced instruction set computing;ECDSA;OpenRISC core;OpenRISC-ISA;SIR10US;advanced cryptographic algorithms;cryptographic extension functions;digital signature verification;elliptic curve digital signature algorithm;embedded systems;instruction set architecture;microcontrollable ECC datapath;pipeline stages;reference architecture;resource aware acceleration engines;tightly coupled elliptic curve cryptography coprocessor;Computer architecture;Cryptography;Elliptic curves;Pipelines;Program processors;Random access memory;Registers;ECC;OpenRISC;co-processor;elliptic-curve cryptography;finitefield arithmetic;instruction-set extension",
+  abstract     = "Today's embedded systems require resource-aware
+                  acceleration engines, which support advanced
+                  cryptographic algorithms such as elliptic-curve
+                  cryptography (ECC). The authors present an
+                  application-specific co-processor for digital
+                  signature verification according to the Elliptic
+                  Curve Digital Signature Algorithm (ECDSA) based on
+                  the NIST B-233 standard. A novel OpenRISC-ISA
+                  (instruction-set architecture) core featuring a high
+                  IPC rate and balanced pipeline stages has been
+                  developed to act as the main controlling unit of the
+                  accelerator. The redesigned OpenRISC core processes
+                  67\% more instructions per second than the reference
+                  architecture and ties with a micro-controllable ECC
+                  datapath through a highly optimized interface. An
+                  ECDSA signature is verified in 11\,ms, which is
+                  equal to a speedup of $15\times$ and $3.3\times$
+                  with respect to a portable C implementation on the
+                  OpenRISC and an assembler-optimized implementation
+                  on an ARM7, respectively. Moreover, thanks to a
+                  tightly coupled data memory, the proposed
+                  co-processor does not block the OpenRISC during its
+                  ECC-specific operations, thereby enabling it to also
+                  support concurrent execution of other workloads
+                  and/or software-based cryptographic extension
+                  functions.",
+} 

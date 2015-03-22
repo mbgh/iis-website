@@ -1,0 +1,309 @@
+/******************************************************************************/
+/* Resetting properties
+/******************************************************************************/
+* {
+  margin : 0;
+	padding : 0;
+	border: 0;
+}
+
+
+/******************************************************************************/
+/* Site-independent styles
+/******************************************************************************/
+body {
+  font: 76% "Century Gothic", verdana, sans-serif;
+	line-height: 1.8em;
+	color: #333;
+	background: #F8F9FA url(images/bg.png) top center;
+}
+
+.clear {
+  clear:both;
+	height:1px;
+	width:1px;
+	line-height:0em;
+	overflow:hidden;
+}
+
+/* A blank table row with a certain height. */
+.blank_row
+{
+	height: 15px !important; /* Overwrite any previous rules */
+  background-color: #FFFFFF;
+}
+
+/***** Links *****
+/* Make sure links and visited links look the same. */
+a, a:visited {
+  text-decoration: none;
+	color: #3898B7;
+	background: inherit;
+}
+a:hover {
+  text-decoration: underline;
+	color: #305F00;
+	background: inherit;
+}
+
+/*****  lists *****/
+ul {
+  margin-bottom: 10px;
+}
+ul li {
+  margin: 0 0 0 20px;
+	list-style: disc;
+	color : #345D26;
+}
+
+/***** Container for site content *****/
+#container {
+  width: 780px;
+	margin: 0 auto;
+	padding: 10px;
+	background: #fff;
+}
+
+/***** Site header (equal for each site) *****/
+#header {
+	/* Font stuff */
+	color: #ffffff;
+	font-weight: lighter;
+	letter-spacing: 3px;
+	text-shadow:0 1px #000;
+
+	/* Size, positioning and spacing of content */
+	height: 150px;
+	vertical-align: middle;
+	padding: 10px;
+	margin-bottom: 0;
+	line-height:35px;
+	text-align:right;
+
+	/* Misc */
+	background: #000000 url(images/banner.jpg) no-repeat;
+	display: table-cell; 		/* Centers the contained table-celle vertically */
+}
+
+#header a, #header a:visited {
+	/* Make sure that hyperlinks in the header are not colored differently once
+	they have been visited. */
+	color: #FFFFFF;
+}
+
+#headerTable {
+	width:760px;
+	border:0;
+	padding-right:20px;
+}
+
+#headerName {
+	font-size: 2.7em;
+}
+
+#headerJob {
+	font-size: 1.6em;
+}
+
+/***** Top navigation (equal for each site) *****/
+#navbar {
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 20px;
+}
+#navbar ul {
+  float: left;
+	width: 100%;
+	margin: 0px;
+	padding: 0;
+	list-style-type: none;
+	font-size: 130%;
+	text-align: center;
+	border-top: 3px solid #95A775;
+	border-bottom: 3px solid #95A775;
+	background: #345D26;
+	color: #000;
+}
+
+#navbar a {
+  float: left;
+	width: 7.0em;
+	height: 30px;
+	/* In order to vertically center the hyperlinks in the navigation bar, set the
+  height of the line to the actual height. */
+	line-height: 30px;
+	text-decoration: none;
+	padding: 0.5em 0.6em;
+	border-right: 1px solid #95A775;
+	background: #345D26;
+	color: #fff;
+}
+
+#navbar li.selected a{
+	background: #223A19;
+}
+
+#navbar a:hover {
+  background:#95A775;
+	color: #000;
+}
+#navbar li {
+  display:inline;
+	padding: 0px;
+}
+
+/***** Sidebar settings *****/
+#sidebar {
+  float: right;
+	width: 190px;
+	margin: 0px;
+	padding: 0px;
+	/* padding-top: 20px; */
+}
+#sidebar h2 {
+	padding-top: 0px;
+}
+
+/***** Footer settings *****/
+#footer {
+  clear: both;
+	padding: 5px;
+	margin-top: 20px;
+	border-top: 2px solid #CAD5A4;
+	font-size: 0.8em;
+	background: #345D26;
+	color: #999;
+}
+#footer a, #footer a:visited {
+  text-decoration: none;
+	color: #95A775;
+	background: inherit;}
+#footer a:hover {
+  text-decoration: underline;
+	color: #eee;
+	background: inherit;
+}
+
+/***** Actual site content settings *****/
+#content {
+	height: auto;
+	padding: 0px;
+	/* padding-top: 20px; */
+	/* Make sure the bottom padding of the content is solely determined by the top*/
+	/* margin of the footer.*/
+	padding-bottom: 0px;
+	/* Add some padding on the left of the actual site content. */
+	padding-left: 10px;
+	margin-right: 220px;
+}
+h1,h2,h3 {
+  font-weight: lighter;
+	letter-spacing: 2px;
+}
+h1 {
+	font-size: 2.5em;
+	color: #fff;
+	padding: 1em;
+}
+h2 {
+	font-size: 1.8em;
+	color: #345D26;
+	padding-top: 30px;
+	padding-bottom: 5px;
+}
+/* Settings for the first h2 heading to appear on a site. */
+.top {
+  padding-top: 0px;
+}
+h3 {
+	font-size: 1.3em;
+	color: #345D26;
+	padding-top: 1.0em;
+	padding-bottom: 0.5em;
+	font-variant: small-caps;
+}
+p {
+	padding: 0px;
+}
+
+/******************************************************************************/
+/* Site-specific style: home.html */
+/******************************************************************************/
+#intro-img {
+	width: 200px;
+	height: 200px;
+	border: 0px;
+	float: left;
+}
+#intro-facts {
+	width: 330px;
+	float: left;
+	margin-left: 20px;
+}
+h2.intro-facts {
+	padding: 0px;
+	padding-bottom: 10px;
+}
+table.intro-facts {
+	width: 330px;
+}
+td.intro-key {
+	font-weight: bold;
+}
+td.intro-value {
+	text-align: right;
+}
+
+#about {
+	clear: left;
+}
+#about h2 {
+	padding-bottom: 0.2em;
+}
+#about p {
+	text-align: justify;
+}
+
+
+/******************************************************************************/
+/* Site-specific style: contact.html */
+/******************************************************************************/
+#contact {
+  height: auto;
+}
+#qr_code_vcard-img {
+	width: 200px;
+	height: 200px;
+	border: 0px;
+	float: left;
+}
+#vcard-facts {
+	width: 330px;
+	float: left;
+	margin-left: 20px;
+}
+h2.vcard-facts {
+	padding: 0px;
+	padding-top: 0px;
+	padding-bottom: 10px;
+}
+table.vcard-facts {
+	width: 330px;
+}
+td.vcard-key {
+	font-weight: bold;
+}
+td.vcard-value {
+	text-align: right;
+}
+
+
+/******************************************************************************/
+/* Site-specific style: publications.html */
+/******************************************************************************/
+#pub_table td:empty {
+	/* Width of empty table columns (i.e., spacing between publication*/
+	/* number and actual publication).*/
+	width: 5px;
+}
+

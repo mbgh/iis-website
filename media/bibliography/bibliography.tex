@@ -1,0 +1,101 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%                                                                %
+%%%%%     Document Class                                             %
+%%%%%                                                                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass{scrartcl}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%                                                                %
+%%%%%     Preamble                                                   %
+%%%%%                                                                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage[resetlabels]{multibib}
+\usepackage[babel]{csquotes}
+
+\usepackage{hyperref}
+
+%% Do not use sans-serif fonts for all dispositions (chapters,
+%% sections, etc.).
+\setkomafont{disposition}{\normalfont\bfseries}
+
+%% Do not use sans-serif fonts for the labels of descriptions.
+\setkomafont{descriptionlabel}{\normalfont\bfseries}
+
+%% Define the required bibliographies.
+\newcites{bookchapters}{{Book Chapters}}
+\newcites{proceedings}{{Peer-Reviewed Conference Proceedings}}
+\newcites{others}{{Other Contributions (incl. Not-Security Related)}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%                                                                %
+%%%%%     Document Settings                                          %
+%%%%%                                                                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{List of Publications}
+\author{by Michael Muehlberghuber}
+
+% Use the 'hyperref' package in order to set PDF file meta data.
+\makeatletter
+\hypersetup{
+ pdftitle    = {List of Publications by Michael Muehlberghuber},   
+ pdfauthor   = {M. Muehlberghuber, <mbgh@iis.ee.ethz.ch>},
+% pdfkeywords = {<KEYWORDS>},
+% pdfsubject  = {<SUBJECT>}
+}
+\makeatother
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%                                                                %
+%%%%%     Start of Document                                          %
+%%%%%                                                                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\maketitle
+
+%%%%% Bibliographies
+
+%% Book chapters
+\nocitebookchapters{Muehlberghuber13a}
+\bibliographystylebookchapters{IEEEtran} % Use 'unsrt' in order to sort publications as listed above.
+\bibliographybookchapters{%
+  ../../www/content/publications/2012-vlsi_soc-book_chapter%
+}
+
+%% Proceedings
+\nociteproceedings{Muehlberghuber15,Soell14,Gautschi14,Nagl14,Muehlberghuber13,Muehlberghuber12,Pelnar13,Tillich09}
+\bibliographystyleproceedings{IEEEtran} % Use 'unsrt' in order to sort publications as listed above.
+\bibliographyproceedings{%
+  ../../www/content/publications/2009-austrochip,%
+  ../../www/content/publications/2012-cardis,%
+  ../../www/content/publications/2012-vlsi_soc,%
+  ../../www/content/publications/2013-hasp,%
+  ../../www/content/publications/2014-asap,%
+  ../../www/content/publications/2014-austrochip,%
+  ../../www/content/publications/2014-host,%
+  ../../www/content/publications/2015-cosade%
+}
+
+%% Other contributions
+\nociteothers{Zbinden13,Bai12}
+\bibliographystyleothers{IEEEtran} % Use 'unsrt' in order to sort publications as listed above.
+\bibliographyothers{%
+  ../../www/content/publications/2012-icecs,%
+  ../../www/content/publications/2013-spie%
+}
+
+
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%                                                                %
+%%%%%     End of Document                                            %
+%%%%%                                                                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
