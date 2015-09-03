@@ -1,7 +1,39 @@
 @INCOLLECTION{Muehlberghuber15,
   author       = "Muehlberghuber, Michael and Korak, Thomas and Dunst, Philipp and Hutter, Michael",
-  title        = "{\textsc{Zorro} - A Masked \textsc{Keccak} Hardware Implementation for Authenticated Encryption}",
+  editor       = "Mangard, Stefan and Poschmann, Axel Y.",
+  title        = "{Towards Evaluating DPA Countermeasures for \textsc{Keccak} on a Real ASIC}",
+  booktitle    = "{Constructive Side-Channel Analysis and Secure Design}",
   booktitle    = "{6th International Workshop on Constructive Side-Channel Analysis and Secure Design (COSADE'15)}",
+  publisher    = "Springer International Publishing",
+  volume       = "9064",
+  pages        = "222--236",
+  series       = "Lecture Notes in Computer Science",
   year         = "2015",
-  note         = "{Note: to be published}",
-} 
+  language     = "English",
+  doi          = "10.1007/978-3-319-21476-4_15",
+  url          = "http://dx.doi.org/10.1007/978-3-319-21476-4_15",
+  isbn         = "978-3-319-21475-7",
+  keywords     = "Duplex construction; SpongeWrap; Threshold implementation; Side-channel attacks; DPA; Low-area hardware; ASIC",
+  abstract     = "We present \textsc{Zorro}, a taped-out ASIC hosting three
+                  distinct authenticated encryption architectures based on the
+                  \textsc{SpongeWrap} construction. All designs target
+                  resource-constrained environments such as smart cards or
+                  embedded devices and therefore, have been protected against
+                  DPA attacks while keeping low-area as the most important
+                  design goal in mind. Each of the three architectures contains
+                  masking and hiding countermeasures. They solely differ with
+                  regard to the implemented secret-sharing scheme. While the
+                  first design is based on a 3-share threshold implementation
+                  (TI), which does not fulfill the uniformity property, the
+                  other two make use of the 3-share approach with re-masking and
+                  the 4-share approach as proposed by Bilgin~et~al. Our
+                  smallest, provable first-order DPA secure \textsc{Keccak}
+                  implementation requires only 14.5\,kGE (which is less than
+                  half of the size of related work) and contains both front-end
+                  and back-end design overheads. Moreover, we present first DPA
+                  results of the \textsc{Zorro} ASIC by comparing hiding and
+                  masking countermeasures. We were able to recover the cipherkey
+                  from a masking-secured TI implementation based on three shares
+                  with about 70\,000 power traces."
+}
+
